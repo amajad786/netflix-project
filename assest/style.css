@@ -1,0 +1,623 @@
+/* Use Font */
+
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(229, 9, 20);
+    --accent-color: rgb(193, 17, 25);
+    --text-color: #ffffff;
+    --secondary-color: rgb(45, 45, 45);
+    --background-color: #000;
+    --border-color: rgb(35, 35, 35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    background: var(--border-color);
+    height: 0.5rem;
+    border: none;
+}
+
+section {
+    padding-bottom: 2.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.row,
+.footer-item1,
+.footer-item2 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+h2,
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+    background: var(--background-color);
+}
+
+.hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+        url('../assest/images/netflix.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .inner-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
+
+.inner-hero {
+    padding: 10rem 3rem 7rem 3rem;
+
+}
+
+.inner-hero h2 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.inner-hero p {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.form-des {
+    font-size: 1.3rem !important;
+    margin-top: 1rem !important;
+}
+
+.topNav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.log {
+    width: 150px;
+}
+
+.logo-img {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: var(--primary-color);
+    fill: currentColor;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.lan {
+    margin: 0 10px;
+}
+
+.lan,
+.logIn {
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.lang-icon {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#language-select {
+    background: transparent;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#language-select option {
+    color: #000 !important;
+    background: transparent;
+
+}
+
+.logIn {
+    background: var(--primary-color) !important;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+.logIn:hover {
+    background: var(--accent-color) !important;
+    border: 1px solid var(--accent-color);
+}
+
+.netflix-item1,
+.netflix-item4,
+.netflix-item5,
+.netflix-item8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1-content h2,
+.item4-content h2,
+.item5-content h2,
+.item8-content h2 {
+    color: var(--text-color);
+}
+
+.item1-content p,
+.item4-content p,
+.item5-content p,
+.item8-content p {
+    color: var(--text-color);
+}
+
+.videoImg {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.imgflud {
+    width: 100%;
+    height: auto;
+}
+
+.netflix-video {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.netflix-item3 {
+    position: relative;
+}
+
+.netflix-card {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    background: var(--background-color);
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-img {
+    width: 60px;
+    height: auto;
+}
+
+.card-title {
+    color: var(--text-color);
+    margin-left: 0.5rem;
+}
+
+.card-title h4 {
+    font-size: 1.1rem;
+}
+
+.card-title p {
+    color: blue;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.netflix-video2 {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 65%;
+    max-height: 54%;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.collapse-div {
+    padding: 0 3rem;
+}
+
+.collapse-div h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.toggleButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    text-align: start;
+}
+
+.toggleButton span {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.toggleButton i {
+    transition: transform 0.8s ease-out;
+    font-size: 1.3rem;
+}
+
+.toggleButton.expanded i {
+    transform: rotate(45deg);
+}
+
+.content {
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+}
+
+.content.collapsed {
+    max-height: 0;
+}
+
+.content.expanded {
+    max-height: auto;
+}
+
+.content p {
+    margin: 0;
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.from-div {
+    text-align: center;
+}
+
+.from-div p {
+    font-size: 1.3rem !important;
+    margin: 2rem 0 !important;
+    color: var(--text-color);
+}
+
+#dynamicForm {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.form-group {
+    width: 60%;
+}
+
+.form-group label {
+    color: var(--text-color);
+    display: block;
+}
+
+.form-group input {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group small {
+    color: red;
+    display: block;
+    font-weight: 500;
+    text-align: left;
+    position: absolute;
+}
+#dynamicForm button {
+    padding: 0.7rem 0;
+    width: 40%;
+    font-size: 1.4rem;
+    font-weight: 200;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#dynamicForm button:hover {
+    background: var(--accent-color);
+}
+
+#dynamicForm button i {
+    margin-left: 0.3rem;
+}
+
+.inner-item1 ul,
+.inner-item2 ul {
+    list-style: none;
+}
+
+.inner-item1 ul a,
+.inner-item2 ul a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+.footer-title a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-title a p {
+    margin-bottom: 1rem;
+}
+
+
+
+/* media Qurry */
+
+@media(max-width:1024px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+     .netflix-card {
+        bottom: -8%;
+    }
+}
+
+@media(max-width:959px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .item1-content h2,
+    .item4-content h2,
+    .item5-content h2,
+    .item8-content h2 {
+        text-align: center;
+    }
+
+    .item1-content p,
+    .item4-content p,
+    .item5-content p,
+    .item8-content p {
+        text-align: center;
+    }
+
+    .netflix-video {
+        max-width: 70%;
+        max-height: 52%;
+
+    }
+
+    .netflix-item4,.netflix-item8{
+        order: 1;
+    }
+
+    .netflix-item3,.netflix-item7{
+        order: 2;
+    }
+    .netflix-card {
+        bottom: -4%;
+    }
+    .card-img{
+        width: 60px;
+    }
+    .row,
+    .footer-item1,
+    .footer-item2 {
+        gap: 0;
+    }
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .log {
+        width: 90px;
+    }
+
+    .netflix-card {
+        bottom: -5%;
+    }
+    .card-img{
+        width: 50px;
+    }
+}
+
+@media(max-width:556px) {
+    .container {
+        padding: 2rem 0;
+    }
+
+    .inner-hero {
+        padding: 3rem 0.5rem 3rem 0.5rem;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .logo-img {
+        width: 7rem;
+        height: 2.3rem;
+    }
+
+    .lang-icon {
+        display: none;
+    }
+
+    .lan {
+        margin: 0 5px;
+    }
+
+    .lan,
+    .logIn {
+        padding: 4px 6px;
+    }
+
+    .container {
+        padding: 0.5rem 0.5rem;
+    }
+
+    .logIn {
+        font-size: small;
+    }
+
+    .collapse-div {
+        padding: 0;
+    }
+
+    .row,
+    .footer-item1,
+    .footer-item2 {
+        gap: 0;
+    }
+
+
+    #dynamicForm button {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    .netflix-card {
+        width: 90%;
+        bottom: -5%;
+    }
+    .card-img{
+        width: 30px;
+    }
+    .card-title h4{
+        font-size: small;
+    }
+    .card-title p{
+        font-size: 0.75rem;
+    }
+    #dynamicForm {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        gap : 10px
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+    .form-group small {
+        position: relative;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    section {
+        padding: 2rem 0;
+    }
+}
